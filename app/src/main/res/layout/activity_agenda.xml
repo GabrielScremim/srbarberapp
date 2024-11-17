@@ -5,14 +5,47 @@
     android:orientation="vertical"
     android:padding="16dp">
 
+    <!-- Spinner para selecionar o Barbeiro -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecione o Barbeiro" />
+    <Spinner
+        android:id="@+id/spinnerBarbeiro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Spinner para selecionar o Cliente -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecione o Cliente" />
+    <Spinner
+        android:id="@+id/spinnerCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- CalendarView para selecionar a data -->
     <CalendarView
         android:id="@+id/calendarView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+    <!-- Botão para marcar o corte -->
     <Button
         android:id="@+id/btnMarcarCorte"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Marcar Corte" />
+
+    <!-- ListView para mostrar os cortes agendados -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cortes Agendados:" />
+
+    <ListView
+        android:id="@+id/listViewAgendamentos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </LinearLayout>
