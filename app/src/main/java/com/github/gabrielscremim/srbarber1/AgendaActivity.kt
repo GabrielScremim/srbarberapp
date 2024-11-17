@@ -38,7 +38,8 @@ class AgendaActivity : AppCompatActivity() {
         // Listener para o CalendarView
         calendarView.setOnDateChangeListener { _, year, month, dayOfMonth ->
             val calendar = Calendar.getInstance()
-            calendar.set(year, month, dayOfMonth)
+            calendar.set(year, month, dayOfMonth, 0, 0, 0)
+            calendar.set(Calendar.MILLISECOND, 0)
             selectedDate = calendar.timeInMillis
 
             // Carregar agendamentos para o dia selecionado
