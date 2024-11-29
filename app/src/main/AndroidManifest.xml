@@ -29,5 +29,6 @@
         <activity android:name=".AgendaActivity" android:exported="false" />
 
     </application>
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

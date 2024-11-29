@@ -4,11 +4,11 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <Button
-        android:id="@+id/btnCadastrarBarbeiro"
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Cadastrar Barbeiro" />
+        android:text="SRBARBER" />
 
     <Button
         android:id="@+id/btnCadastrarCliente"
@@ -21,4 +21,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Abrir Agenda" />
+
+    <Button
+        android:id="@+id/btnCadastrarBarbeiro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar Barbeiro" />
 </LinearLayout>
